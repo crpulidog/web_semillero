@@ -1,0 +1,99 @@
+.participaciones-container {
+  background-color: var(--bg-dark);
+  padding: 100px 20px;
+  border-bottom: 1px solid var(--steel-blue);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.participaciones-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.participaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.participacion-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--steel-blue);
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.participacion-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cyan-neon);
+}
+
+.participacion-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.participacion-anio {
+  background-color: rgba(255, 204, 0, 0.1);
+  color: var(--electric-yellow);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 1px solid var(--electric-yellow);
+}
+
+.participacion-tag-cat {
+  color: var(--cyan-neon);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.participacion-card h3 {
+  color: var(--text-light);
+  font-size: 1.25rem;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.participacion-evento {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin: 0 0 5px 0;
+}
+
+.participacion-lugar {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin: 0 0 15px 0;
+}
+
+.participacion-desc {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .participaciones-container {
+    padding: 70px 20px;
+  }
+
+  .participaciones-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .participacion-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,143 @@
+/* Usamos las variables globales definidas en App.css */
+
+.hero-container {
+  position: relative;
+  background-color: var(--bg-dark);
+  background-image: radial-gradient(circle at center, var(--steel-blue) 0%, var(--bg-dark) 70%);
+  padding: 120px 20px; /* Espaciado superior e inferior grande */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--steel-blue);
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 2; /* Asegura que el texto esté sobre el fondo decorativo */
+}
+
+.badge-research {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--electric-yellow);
+  border-radius: 20px;
+  background-color: rgba(255, 204, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.highlight-yellow {
+  color: var(--electric-yellow);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-cyan {
+  color: var(--cyan-neon);
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #a0aec0; /* Un gris un poco más claro para el texto secundario */
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-main {
+  background-color: var(--cyan-neon);
+  color: var(--bg-dark);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--cyan-neon);
+}
+
+.btn-main:hover {
+  background-color: transparent;
+  color: var(--cyan-neon);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-light);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--steel-blue);
+}
+
+.btn-secondary:hover {
+  background-color: var(--steel-blue);
+  border-color: var(--steel-blue);
+}
+
+/* Efecto visual de fondo sutil */
+.hero-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--cyan-neon);
+  filter: blur(150px);
+  opacity: 0.1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* --- Responsive Design (Tablet y Móvil) --- */
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 80px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn-main, .btn-secondary {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
