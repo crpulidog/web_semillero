@@ -1,0 +1,138 @@
+:root, html.dark-mode {
+  --text: #94a3b8;
+  --text-h: #f8fafc;
+  --bg: #050811;
+  --bg-secondary: #0b101d;
+  --bg-card: #0f172a;
+  --border: #1e293b;
+  --border-glow: rgba(0, 240, 255, 0.3);
+  --code-bg: #0b101d;
+  
+  --accent: #00f0ff;
+  --accent-bg: rgba(0, 240, 255, 0.12);
+  --accent-border: rgba(0, 240, 255, 0.4);
+  --color-cyan: #00f0ff;
+  --color-yellow: #ffcc00;
+
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(0, 240, 255, 0.15);
+  color-scheme: dark;
+}
+
+html.light-mode {
+  --text: #334155;
+  --text-h: #0f172a;
+  --bg: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --border: #cbd5e1;
+  --border-glow: rgba(2, 132, 199, 0.3);
+  --code-bg: #f1f5f9;
+  
+  --accent: #0284c7;
+  --accent-bg: rgba(2, 132, 199, 0.08);
+  --accent-border: rgba(2, 132, 199, 0.3);
+  --color-cyan: #0284c7;
+  --color-yellow: #b45309;
+
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 0 15px -3px rgba(2, 132, 199, 0.1);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#root {
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: none !important;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+section{
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  max-width: 1126px;
+}
+
+h1, h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+code, .counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+.participacion-card, .pub-card, .recurso-card, .info-card-main, .pillar-card, .contact-item, .contact-form input, .contact-form textarea {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}

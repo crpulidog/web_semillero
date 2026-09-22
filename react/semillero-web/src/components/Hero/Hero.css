@@ -1,0 +1,90 @@
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  position: relative;
+  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  z-index: 2;
+}
+
+.badge-research {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: rgba(255, 204, 0, 0.1);
+  border: 1px solid var(--color-yellow);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-yellow {
+  color: var(--color-yellow);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0 0 1.5rem 0;
+}
+
+.text-light {
+  color: var(--text-main);
+}
+
+.text-cyan {
+  color: var(--color-cyan);
+  text-shadow: 0 0 20px var(--color-cyan-glow);
+}
+
+.hero-description {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-main {
+  background-color: var(--color-cyan);
+  color: var(--bg-primary);
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.btn-main:hover {
+  box-shadow: 0 0 15px var(--color-cyan-glow);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-cyan);
+  color: var(--color-cyan);
+}
