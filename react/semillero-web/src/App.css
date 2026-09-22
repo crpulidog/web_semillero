@@ -1,4 +1,13 @@
-:root {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* :root {
   --bg-dark: #0a0f18;
   --bg-card: #131c2e;
   --cyan-neon: #00f0ff;
@@ -15,12 +24,10 @@ body {
   background-color: var(--bg-dark);
   font-family: system-ui, -apple-system, sans-serif;
   color: var(--text-light);
-  /*overflow-x: hidden;*/
   scroll-behavior: smooth;
 }
 
 .app-container {
-  /*max-width: 1126px;*/
   width: 100%;
   margin: 0;
   padding: 0;
@@ -93,7 +100,7 @@ body {
 .footer-email {
   color: #00f0ff;
   font-weight: 600;
-}
+} */
 
 /* .counter {
   font-size: 16px;

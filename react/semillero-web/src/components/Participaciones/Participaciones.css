@@ -1,4 +1,4 @@
-.participaciones-container {
+/* .participaciones-container {
   background-color: var(--bg-dark);
   padding: 100px 20px;
   border-bottom: 1px solid var(--steel-blue);
@@ -96,4 +96,56 @@
   .participacion-card {
     padding: 20px;
   }
+} */
+
+.participaciones-container {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.participaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.participacion-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.participacion-card:hover {
+  border: 1px solid var(--color-cyan);
+  box-shadow: 0 4px 8px var(--color-cyan);
+  transform: translateY(-5px);
+}
+
+.participacion-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.participacion-anio {
+  color: var(--color-yellow);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid var(--color-yellow);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.participacion-tag-cat {
+  color: var(--color-cyan);
+  font-size: 0.85rem;
+  font-weight: 600;
 }

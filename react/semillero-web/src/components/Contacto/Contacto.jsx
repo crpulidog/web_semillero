@@ -30,17 +30,17 @@ export default function Contacto() {
         <div className="row">
           <div className="col-md-6">
             <div className="contact-info">
-              <div className="contact-item">
-                  <h4>Email</h4>
+              <div className="contact-item">   
+                  <h4>📧<br></br>Email</h4>
                   <p>william.cuevas@unad.edu.co</p>
               </div>
               <div className="contact-item">
-                  <h4>Teléfono</h4>
+                  <h4>📱<br></br>Teléfono</h4>
                   <p>+57 320 444 4030</p>
               </div>
               <div className="contact-item">
-                  <h4>Ubicación</h4>
-                  <p>UNAD - Zona Centro Bogotá Cundinamarca, Facatativá, Colombia</p>
+                  <h4>📍<br></br>Ubicación</h4>
+                  <p>UNAD - Zona Centro Bogotá Cundinamarca<br></br>Facatativá, Colombia</p>
               </div>
             </div>
           </div>

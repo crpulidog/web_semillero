@@ -1,4 +1,4 @@
-.publicaciones-container {
+/* .publicaciones-container {
   background-color: var(--bg-dark);
   padding: 100px 20px;
   border-bottom: 1px solid var(--steel-blue);
@@ -55,7 +55,6 @@
   text-align: center;
 }
 
-/* Grilla de Publicaciones */
 .publicaciones-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -164,7 +163,6 @@
   color: var(--cyan-neon);
 }
 
-/* Grilla de Recursos */
 .recursos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -233,4 +231,45 @@
   .section-header h2 {
     font-size: 2rem;
   }
+} */
+
+.publicaciones-container {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bloque-seccion {
+  margin-bottom: 4rem;
+}
+
+.titulo-seccion {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--color-cyan);
+  padding-left: 0.75rem;
+}
+
+.publicaciones-grid, .recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.pub-card, .recurso-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pub-link, .recurso-link {
+  color: var(--color-cyan);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
 }

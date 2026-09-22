@@ -1,4 +1,5 @@
 import React from 'react';
+import Integrantes from './Integrantes/Integrantes';
 import './Nosotros.css';
 
 export default function Nosotros() {
@@ -53,6 +54,8 @@ export default function Nosotros() {
         </div>
 
       </div>
+
+      <Integrantes />
     </section>
   );
 }

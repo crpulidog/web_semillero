@@ -8,27 +8,27 @@ export default function Integrantes() {
   const lineasInvestigacion = [
     {
       titulo: "Gestión, Innovación y Desarrollo de la Ciencia y Tecnología de Alimentos",
-      descripcion: "Investigación en procesos de producción, conservación y control de calidad de alimentos mediante técnicas avanzadas."
+      //descripcion: "Investigación en procesos de producción, conservación y control de calidad de alimentos mediante técnicas avanzadas."
     },
     {
       titulo: "Diseño Tecnológico Centrado en la Experiencia de Usuario",
-      descripcion: "Desarrollo de interfaces y sistemas interactivos que optimicen la experiencia del usuario en aplicaciones tecnológicas."
+      //descripcion: "Desarrollo de interfaces y sistemas interactivos que optimicen la experiencia del usuario en aplicaciones tecnológicas."
     },
     {
       titulo: "Contenidos y Aplicaciones Inmersivas e Interactivas para el Fortalecimiento de la Gestión e Innovación Educativa",
-      descripcion: "Creación de entornos virtuales y aplicaciones interactivas que potencien la enseñanza y el aprendizaje mediante tecnologías inmersivas."
+      //descripcion: "Creación de entornos virtuales y aplicaciones interactivas que potencien la enseñanza y el aprendizaje mediante tecnologías inmersivas."
     },
     {
       titulo: "Electrónica, Automatización y Robótica",
-      descripcion: "Investigación y desarrollo en electrónica, automatización y robótica para soluciones tecnológicas innovadoras."
+      //descripcion: "Investigación y desarrollo en electrónica, automatización y robótica para soluciones tecnológicas innovadoras."
     },
     {
       titulo: "Infraestructura Tecnológica y Transformación Digital Inteligente",
-      descripcion: "Implementación de soluciones de infraestructura tecnológica y estrategias de transformación digital para optimizar procesos y servicios."
+      //descripcion: "Implementación de soluciones de infraestructura tecnológica y estrategias de transformación digital para optimizar procesos y servicios."
     },
     {
       titulo: "Energías y Desarrollo Sostenible",
-      descripcion: "Investigación en energías renovables y sostenibilidad para promover prácticas responsables y eficientes en el uso de recursos."
+      //descripcion: "Investigación en energías renovables y sostenibilidad para promover prácticas responsables y eficientes en el uso de recursos."
     }
   ];
 

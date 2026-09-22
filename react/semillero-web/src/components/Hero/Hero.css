@@ -1,36 +1,32 @@
-/* Usamos las variables globales definidas en App.css */
-
 .hero-container {
-  position: relative;
-  background-color: var(--bg-dark);
-  background-image: radial-gradient(circle at center, var(--steel-blue) 0%, var(--bg-dark) 70%);
-  padding: 120px 20px; /* Espaciado superior e inferior grande */
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  overflow: hidden;
-  border-bottom: 1px solid var(--steel-blue);
+  justify-content: center;
+  padding: 0 2rem;
+  position: relative;
+  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
 }
 
 .hero-content {
   max-width: 800px;
-  z-index: 2; /* Asegura que el texto esté sobre el fondo decorativo */
+  text-align: center;
+  z-index: 2;
 }
 
 .badge-research {
   display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid var(--electric-yellow);
+  padding: 0.35rem 1rem;
+  background: rgba(255, 204, 0, 0.1);
+  border: 1px solid var(--color-yellow);
   border-radius: 20px;
-  background-color: rgba(255, 204, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .highlight-yellow {
-  color: var(--electric-yellow);
+  color: var(--color-yellow);
+  font-size: 0.85rem;
   font-weight: 600;
-  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -38,106 +34,57 @@
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  margin: 0 0 20px 0;
-  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
 }
 
 .text-light {
-  color: var(--text-light);
+  color: var(--text-main);
 }
 
 .text-cyan {
-  color: var(--cyan-neon);
-  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+  color: var(--color-cyan);
+  text-shadow: 0 0 20px var(--color-cyan-glow);
 }
 
 .hero-description {
-  font-size: 1.2rem;
-  color: #a0aec0; /* Un gris un poco más claro para el texto secundario */
-  margin-bottom: 40px;
+  color: var(--text-muted);
+  font-size: 1.15rem;
   line-height: 1.6;
+  margin-bottom: 2.5rem;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .btn-main {
-  background-color: var(--cyan-neon);
-  color: var(--bg-dark);
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-weight: 700;
+  background-color: var(--color-cyan);
+  color: var(--bg-primary);
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  border: 2px solid var(--cyan-neon);
+  transition: var(--transition-smooth);
 }
 
 .btn-main:hover {
-  background-color: transparent;
-  color: var(--cyan-neon);
-  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 15px var(--color-cyan-glow);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--text-light);
-  padding: 12px 28px;
-  border-radius: 6px;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  border: 2px solid var(--steel-blue);
+  transition: var(--transition-smooth);
 }
 
 .btn-secondary:hover {
-  background-color: var(--steel-blue);
-  border-color: var(--steel-blue);
-}
-
-/* Efecto visual de fondo sutil */
-.hero-glow {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background-color: var(--cyan-neon);
-  filter: blur(150px);
-  opacity: 0.1;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-/* --- Responsive Design (Tablet y Móvil) --- */
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-    padding: 80px 20px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-description {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .btn-main, .btn-secondary {
-    width: 100%;
-    box-sizing: border-box;
-  }
+  border-color: var(--color-cyan);
+  color: var(--color-cyan);
 }

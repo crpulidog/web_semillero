@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href="#proyectos" className="btn-main">Conoce Nuestros Proyectos</a>
+          <a href="#participaciones" className="btn-main">Conoce Nuestras Participaciones</a>
           <a href="#contacto" className="btn-secondary">Unirse al Semillero</a>
         </div>
       </div>
