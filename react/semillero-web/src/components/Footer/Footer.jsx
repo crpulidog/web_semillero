@@ -17,7 +17,8 @@ export default function Footer() {
             <ul>
               <li><a href="#nosotros">Nosotros</a></li>
               <li><a href="#participaciones">Participaciones</a></li>
-              <li><a href="#integrantes">Integrantes</a></li>
+              <li><a href="#eventos">Eventos</a></li>
+              <li><a href="#publicaciones">Publicaciones</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </div>

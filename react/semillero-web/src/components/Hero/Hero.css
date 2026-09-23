@@ -4,13 +4,41 @@
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
+  /*
   position: relative;
-  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 60%, var(--accent-bg) 100%);
+  */
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 40% 40%, var(--accent) 0%, transparent 60%);
+  opacity: 0.10;
+  pointer-events: none;
+  animation: pulsoGradiente 12s ease infinite alternate;
+  z-index: 1;
+}
+
+@keyframes pulsoGradiente {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
 }
 
 .hero-content {
   max-width: 800px;
   text-align: center;
+  position: relative;
   z-index: 2;
 }
 
@@ -61,7 +89,7 @@
 
 .btn-main {
   background-color: var(--color-cyan);
-  color: var(--bg-primary);
+  color: var(--bg-secondary);
   padding: 0.75rem 1.75rem;
   border-radius: 4px;
   font-weight: 600;
