@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Nosotros from './components/Nosotros/Nosotros';
 import Participaciones from './components/Participaciones/Participaciones';
-import Galeria from './components/Galeria/Galeria';
+import Eventos from './components/Eventos/Eventos';
 import Publicaciones from './components/Publicaciones/Publicaciones';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
@@ -38,7 +38,7 @@ export default function App() {
       <Hero />
       <Nosotros />
       <Participaciones />
-      <Galeria />
+      <Eventos />
       <Publicaciones />
       <Contacto />
       <Footer />

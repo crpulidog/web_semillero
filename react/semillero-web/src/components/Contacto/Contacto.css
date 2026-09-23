@@ -1,7 +1,39 @@
 .contacto {
   padding: 6rem 2rem;
-  max-width: 1200px;
   margin: 0 auto;
+}
+
+.contacto .container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 500px;
+}
+
+/*
+.contacto .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--accent) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+  opacity: 0.25;
+  animation: desplazarPatron 25s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+*/
+
+@keyframes desplazarPatron {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 64px 64px;
+  }
 }
 
 .row {
@@ -20,12 +52,6 @@
 }
 
 .contact-item {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;

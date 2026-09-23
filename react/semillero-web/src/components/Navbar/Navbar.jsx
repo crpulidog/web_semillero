@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImage from '../../assets/logo_electron_volt.jpeg';
 import './Navbar.css';
 
 export default function Navbar({ darkMode, toggleTheme }) {
@@ -12,7 +13,7 @@ export default function Navbar({ darkMode, toggleTheme }) {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#inicio" className="navbar-logo">
-          <img src="/logo_electron_volt.jpeg" alt="Logo" className="navbar-logo-img" />
+          <img src={logoImage} alt="Logo" className="navbar-logo-img" />
           Electron Volt
         </a>
 
@@ -46,12 +47,11 @@ export default function Navbar({ darkMode, toggleTheme }) {
             <a href="#integrantes" className="nav-links" onClick={toggleMenu}>Integrantes</a>
           </li>*/}
           <li className="nav-item">
+            <a href="#eventos" className="nav-links" onClick={toggleMenu}>Eventos</a>
+          </li>
+          <li className="nav-item">
             <a href="#publicaciones" className="nav-links" onClick={toggleMenu}>Publicaciones</a>
           </li>
-            <li className="nav-item">
-            <a href="#galeria" className="nav-links" onClick={toggleMenu}>Galería</a>
-          </li>
-
           <li className="nav-item">
             <a href="#contacto" className="nav-links nav-cta" onClick={toggleMenu}>Contacto</a>
           </li>

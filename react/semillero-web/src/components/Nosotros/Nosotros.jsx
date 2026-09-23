@@ -1,5 +1,4 @@
 import React from 'react';
-import Integrantes from './Integrantes/Integrantes';
 import './Nosotros.css';
 
 export default function Nosotros() {
@@ -17,11 +16,11 @@ export default function Nosotros() {
 
         <div className="nosotros-info-grid">
           <div className="info-card-main">
-            <h3>Información Institucional (SIGIIP)</h3>
+            {/*<h3>Información Institucional (SIGIIP)</h3>*/}
             <div className="sigiip-details">
               <p><strong>Unidad académica responsable:</strong></p><p>Escuela de Ciencias Básicas -Tecnología e Ingeniería ECBTI - UNAD</p><br></br>
               <p><strong>Responsable del Semillero:</strong></p><p>William Alexander Cuevas </p><br></br>
-              <p><strong>Fecha de Creación:</strong></p><p> 02/10/2021 </p>
+              <p><strong>Fecha de Creación:</strong></p><p> 02/10/2021 </p><br></br>
               <p><strong>Sede/Campus:</strong></p><p> Zona Centro Bogota Cundinamarca (Zcbog) </p>
             </div>
             <a 
@@ -32,6 +31,21 @@ export default function Nosotros() {
             >
               Ver Ficha Oficial SIGIIP
             </a>
+
+            <div className="stats">
+              <div className="stat">
+                <h4>+50</h4>
+                <p>Proyectos</p>
+              </div>
+              <div className="stat">
+                <h4>+100</h4>
+                <p>Miembros</p>
+              </div>
+              <div className="stat">
+                <h4>5</h4>
+                <p>Años</p>
+              </div>
+            </div>
           </div>
 
           <div className="mision-vision-wrapper">
@@ -52,10 +66,7 @@ export default function Nosotros() {
             </div>
           </div>
         </div>
-
       </div>
-
-      <Integrantes />
     </section>
   );
 }

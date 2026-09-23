@@ -1,0 +1,38 @@
+[
+  {
+    "tipo": "Artículo de Investigación",
+    "titulo": "Shapley's Value as a Resource Optimization Strategy for Digital Radio Transmission over IBOC FM",
+    "fuente": "Applied Sciences (MDPI)",
+    "fecha": "2024",
+    "enlaceOrigen": "https://www.mdpi.com/2076-3417/14/7/2704",
+    "archivoPdf": "/docs/shapley_radio_digital.pdf",
+    "etiqueta": "Telecomunicaciones"
+  },
+  {
+    "tipo": "Ponencia / Artículo",
+    "titulo": "Diseño de un invernadero tecnificado mediado por polinizadores para la UNAD-CCAV Facatativá",
+    "fuente": "Documentos de Trabajo ECAPMA",
+    "fecha": "2024",
+    "enlaceOrigen": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=CcWn8nQAAAAJ&citation_for_view=CcWn8nQAAAAJ:eQOLeE2rZwMC",
+    "archivoPdf": "/docs/invernadero_unad.pdf",
+    "etiqueta": "AgTech / UNAD"
+  },
+  {
+    "tipo": "Working Paper",
+    "titulo": "Mechatronic development of a line follower robot",
+    "fuente": "Repositorio Institucional UNAD",
+    "fecha": "2023",
+    "enlaceOrigen": "https://publicaciones.unad.edu.co/index.php/wpecbti/article/view/6689",
+    "archivoPdf": "/docs/robot_seguidor_linea.pdf",
+    "etiqueta": "Robótica"
+  },
+  {
+    "tipo": "Artículo de Investigación",
+    "titulo": "Optimization of Resources for Digital Radio Transmission over IBOC FM through Max-Min Fairness",
+    "fuente": "Computer Science & Information Technology",
+    "fecha": "2024",
+    "enlaceOrigen": "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=CcWn8nQAAAAJ&citation_for_view=CcWn8nQAAAAJ:Y0pCki6q_DkC",
+    "archivoPdf": "/docs/optimization_resources_iboc_fm.pdf",
+    "etiqueta": "Telecomunicaciones"
+  }
+]
