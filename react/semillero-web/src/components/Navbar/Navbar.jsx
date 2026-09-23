@@ -47,12 +47,11 @@ export default function Navbar({ darkMode, toggleTheme }) {
             <a href="#integrantes" className="nav-links" onClick={toggleMenu}>Integrantes</a>
           </li>*/}
           <li className="nav-item">
-            <a href="#publicaciones" className="nav-links" onClick={toggleMenu}>Publicaciones</a>
-          </li>
-            <li className="nav-item">
             <a href="#eventos" className="nav-links" onClick={toggleMenu}>Eventos</a>
           </li>
-
+          <li className="nav-item">
+            <a href="#publicaciones" className="nav-links" onClick={toggleMenu}>Publicaciones</a>
+          </li>
           <li className="nav-item">
             <a href="#contacto" className="nav-links nav-cta" onClick={toggleMenu}>Contacto</a>
           </li>
